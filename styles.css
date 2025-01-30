@@ -1,0 +1,272 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #c62828;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #c62828;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#reason-text {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+    min-height: 80px;
+    display: flex;
+    align-items: center;/* styles.css */
+:root {
+    --primary-color: #ff4d6d;
+    --secondary-color: #ff8fa3;
+    --background-gradient: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    --box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: var(--background-gradient);
+    color: #2b2b2b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    line-height: 1.6;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: var(--box-shadow);
+    max-width: 90vw;
+    width: 600px;
+    backdrop-filter: blur(10px);
+    animation: fadeIn 1s ease-out;
+    position: relative;
+    z-index: 1;
+    margin: 1rem;
+}
+
+.neon-text {
+    color: var(--primary-color);
+    text-shadow: 0 0 10px var(--primary-color),
+                 0 0 20px var(--primary-color),
+                 0 0 30px var(--primary-color);
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    animation: neonPulse 1.5s ease-in-out infinite alternate;
+}
+
+#reason-text {
+    font-size: 1.4rem;
+    min-height: 100px;
+    margin: 1.5rem 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    position: relative;
+    padding: 1rem;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+#reason-text.visible {
+    opacity: 1;
+}
+
+.buttons-container {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.btn {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    backdrop-filter: blur(5px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn:hover {
+    background: var(--secondary-color);
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(1px);
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 1rem 0;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: var(--primary-color);
+    width: 0%;
+    transition: width 0.5s ease-out;
+    border-radius: 10px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes neonPulse {
+    from { text-shadow: 0 0 10px var(--primary-color); }
+    to { text-shadow: 0 0 20px var(--primary-color), 
+                     0 0 30px var(--primary-color), 
+                     0 0 40px var(--primary-color); }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+        border-radius: 15px;
+    }
+    
+    .neon-text {
+        font-size: 2rem;
+    }
+    
+    #reason-text {
+        font-size: 1.2rem;
+    }
+    
+    .btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+    justify-content: center;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#counter {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #c62828;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#show-reason-btn, #reset-btn, #see-more-btn, #ver-mas-btn {
+    background-color: #c62828;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#show-reason-btn:hover, #reset-btn:hover, #see-more-btn:hover, #ver-mas-btn:hover{
+    background-color: #b71c1c;
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+#show-reason-btn:disabled, #reset-btn:disabled, #ver-mas-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.heart, .confetti {
+    position: absolute;
+    font-size: 2rem;
+    color: #c62828;
+    animation: float 5s ease-in-out infinite;
+    user-select: none;
+}
+
+.confetti {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+@keyframes float {
+    0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+}
+
+/* Fondo animado */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, transparent 20%, #ff9a9e 20%, #ff9a9e 80%, transparent 80%, transparent),
+                radial-gradient(circle, transparent 20%, #fad0c4 20%, #fad0c4 80%, transparent 80%, transparent);
+    background-size: 50px 50px;
+    animation: moveBackground 10s linear infinite;
+    z-index: -1;
+}
+
+@keyframes moveBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: 50px 50px; }
+}
